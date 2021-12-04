@@ -20,6 +20,5 @@ namespace MovieRater.Models.Movie
         public MaturityRating MaturityRating { get; set; }
         [Required]
         public GenreType TypeOfGenre { get; set; }
-
     }
 }
