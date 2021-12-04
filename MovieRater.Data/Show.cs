@@ -6,8 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MovieRater.Data
-{
-    
+{    
         public enum GenreTypeShow
         {
             Action = 1,
@@ -66,5 +65,4 @@ namespace MovieRater.Data
             public virtual List<Rating> EpisodeRatings { get; set; } = new List<Rating>();
             public double EpisodeRating { get; set; }
         }
-    
 }
