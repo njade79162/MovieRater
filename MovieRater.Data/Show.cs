@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace MovieRater.Data
 {
     
-        public enum GenreType
+        public enum GenreTypeShow
         {
             Action = 1,
             Adventure,
@@ -21,7 +21,7 @@ namespace MovieRater.Data
             Nonfiction
         }
 
-        public enum MaturityRating
+        public enum ShowMaturityRating
         {
             G = 1,
             PG,
@@ -41,10 +41,10 @@ namespace MovieRater.Data
             public int EpisodeCount { get; set; }
             public double RoundedRuntime { get; set; }
             public List<Episode> Episodes { get; set; }
-            public GenreType TypeOfGenre { get; set; }
+            public GenreTypeShow TypeOfGenre { get; set; }
 
 
-            public MaturityRating MaturityRating { get; set; }
+            public ShowMaturityRating MaturityRating { get; set; }
             public bool IsFamilyFriendly { get; set; }
 
             [Required]
