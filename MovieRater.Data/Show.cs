@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace MovieRater.Data
 {
-   public class Show
-    {
+    
         public enum GenreType
         {
             Action = 1,
@@ -32,7 +31,6 @@ namespace MovieRater.Data
             TV_MA,
             NR
         }
-
         public class Show
         {
             [Key]
@@ -68,5 +66,5 @@ namespace MovieRater.Data
             public virtual List<Rating> EpisodeRatings { get; set; } = new List<Rating>();
             public double EpisodeRating { get; set; }
         }
-    }
+    
 }
