@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MoveRater.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -47,7 +48,7 @@ namespace MovieRater.Data
                     }
                 }
             }
-            //public virtual List<Rating> Ratings { get; set; } = new List<Rating>();
+            public virtual List<Rating> Ratings { get; set; } = new List<Rating>();
 
         }
     }
